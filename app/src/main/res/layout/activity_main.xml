@@ -9,34 +9,34 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/subtraction"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/bluey"
         android:text="–"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintEnd_toStartOf="@+id/enteredNumber2"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/enteredNumber1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/multiplication"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/bluey"
         android:text="x"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintEnd_toStartOf="@+id/enteredNumber2"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/enteredNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/subtraction"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/calculateButton"
         android:layout_width="158dp"
         android:layout_height="63dp"
         android:backgroundTint="@color/bluey"
@@ -49,20 +49,20 @@
         app:layout_constraintVertical_bias="0.88" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/division"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/bluey"
         android:text="÷"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintEnd_toStartOf="@+id/enteredNumber2"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/enteredNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/multiplication"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/enteredNumber2"
         android:layout_width="113dp"
         android:layout_height="47dp"
         android:ems="10"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/enteredNumber1"
         android:layout_width="113dp"
         android:layout_height="47dp"
         android:ems="10"
@@ -94,34 +94,34 @@
         app:layout_constraintVertical_bias="0.476" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addition"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/bluey"
         android:text="+"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintBottom_toTopOf="@+id/subtraction"
+        app:layout_constraintEnd_toStartOf="@+id/enteredNumber2"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/enteredNumber1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/clearButton"
         android:layout_width="72dp"
         android:layout_height="33dp"
         android:backgroundTint="@color/bluey"
         android:text="clear"
         android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/calculateButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/division"
         app:layout_constraintVertical_bias="0.651" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/answerTextView"
         android:layout_width="321dp"
         android:layout_height="31dp"
         android:hint="Answer will appear here"
@@ -129,7 +129,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/addition"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
