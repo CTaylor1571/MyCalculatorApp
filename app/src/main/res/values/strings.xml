@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">My Calculator App</string>
+    <string name="calculate">CALCULATE!</string>
+    <string name="clear">CLEAR</string>
+    <string name="enter_num">Number</string>
+    <string name="answer_here">Answer will appear here</string>
 </resources>
