@@ -39,17 +39,17 @@
 
     <Button
         android:id="@+id/calculateButton"
-        android:layout_width="158dp"
-        android:layout_height="63dp"
+        android:layout_width="110dp"
+        android:layout_height="69dp"
         android:backgroundTint="@color/bluey"
         android:onClick="onCalculate"
         android:text="@string/calculate"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/division"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toEndOf="@+id/division"
+        app:layout_constraintTop_toBottomOf="@+id/enteredNumber2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/division"
@@ -115,16 +115,16 @@
         android:id="@+id/clearButton"
         android:layout_width="72dp"
         android:layout_height="33dp"
-        android:backgroundTint="@color/bluey"
+        android:backgroundTint="@color/teal_200"
         android:onClick="onClear"
         android:text="@string/clear"
         android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/calculateButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintBottom_toBottomOf="@+id/division"
+        app:layout_constraintEnd_toStartOf="@+id/division"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/division"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintTop_toBottomOf="@+id/enteredNumber1"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/answerTextView"
